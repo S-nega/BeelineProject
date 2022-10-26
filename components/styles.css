@@ -6,6 +6,9 @@
     font-weight: normal;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'SF Pro Display';
 }
@@ -70,6 +73,10 @@ li .menu-list{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+    transition: 400ms all;
+}
+.links:hover{
+    color: #FFD400;
 }
 .staticMenu img{
     width: 41px;
@@ -80,13 +87,16 @@ li .menu-list{
     text-decoration: none;
 } */
 #menuOpenBut{
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
 #menuCloseBut{
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
 #activeMenu .staticMenu{
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
 
 
@@ -147,7 +157,6 @@ li .menu-list{
     width: 1440px;
     position: absolute;
     top: 599px;
-    /* left: 0; */
 }
 
 .aboutRespondent-block{
@@ -198,6 +207,7 @@ li .menu-list{
     padding-top: auto;
     padding-bottom: auto;
     line-height: 441px;
+    transition: width 500ms;
 }
 .card:hover{
     width: 361px;
@@ -207,18 +217,6 @@ li .menu-list{
     display: inline-block;
     vertical-align: middle;
 }
-/* .plusesActiveText{
-    display: none;
-    /* visibility: hidden; */
-    /* position: relative; 
-    animation-name: plusesBlockAnimation;
-} */
-/* .card p .c1{
-    color: #78735E;
-}
-.card h2 .c1{
-    color: #000;
-} */
 .c1{
     background: #FFF6CC;
     color:#78735E;
@@ -239,13 +237,13 @@ h2 .c2{
     color: #fff;
 }
 .card p{
-    display: none; 
     margin: auto;
     width: 291px;
-    /* padding: 0 35px; */
+    opacity: 0;
+    transition: 500ms all;
 }
 .card:hover p{
-    display: block;
+    opacity: 1;
 }
 
 
@@ -276,7 +274,7 @@ h2 .c2{
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
-    color: #000000;
+    color: #000;
 }
 .joinUs-point p{
     margin: 0px;
@@ -365,7 +363,8 @@ h2 .c2{
         /* цвет меняется на клик */
     }
     #activeMenu{
-        display: none;
+        /* display: none; */
+        opacity: 0;
         position: absolute;
         top: 0;
         margin: 0;
@@ -415,10 +414,12 @@ h2 .c2{
         display: block;
     } */
     #menuCloseBut{
-        display: none;
+        /* display: none; */
+        opacity: 0;
     }
     #menuOpenBut{
-        display: block;
+        /* display: block; */
+        opacity: 1;
     }   
     .staticMenu img{
         width: 36px;
@@ -522,6 +523,7 @@ h2 .c2{
     }
     .card p{
         display: block;
+        opacity: 1;
     }
     .card-info{
         display: inherit;

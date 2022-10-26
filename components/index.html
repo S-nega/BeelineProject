@@ -200,15 +200,21 @@
 
         <script >
             menuOpenBut.onclick = function(){
-                menuOpenBut.style.display = 'none';
-                menuCloseBut.style.display = 'block';
-                activeMenu.style.display = 'block';
+                // menuOpenBut.style.display = 'none';
+                // menuCloseBut.style.display = 'block';
+                // activeMenu.style.display = 'block';
+                menuOpenBut.style.opacity = 0;
+                menuCloseBut.style.opacity = 1;
+                activeMenu.style.opacity = 1;
             }
 
             menuCloseBut.onclick = function(){
-                menuOpenBut.style.display = 'block';
-                menuCloseBut.style.display = 'none';
-                activeMenu.style.display = 'none';
+                // menuOpenBut.style.display = 'block';
+                // menuCloseBut.style.display = 'none';
+                // activeMenu.style.display = 'none';
+                menuOpenBut.style.opacity = 1;
+                menuCloseBut.style.opacity = 0;
+                activeMenu.style.opacity = 0;
             }
         </script>
     </body>
